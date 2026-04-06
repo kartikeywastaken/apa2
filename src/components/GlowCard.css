@@ -1,0 +1,58 @@
+.glow-card {
+  width: 190px;
+  height: 254px;
+  background: rgba(10, 10, 10, 0.8);
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: default;
+}
+
+.glow-card:hover {
+  transform: perspective(800px) rotateY(8deg) rotateX(4deg) scale(1.03);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.5),
+    0 0 30px rgba(139, 0, 0, 0.15);
+  border-color: rgba(139, 0, 0, 0.3);
+}
+
+.glow-card > * {
+  z-index: 2;
+  position: relative;
+}
+
+/* Person card variant - taller */
+.glow-card.person-card {
+  width: 240px;
+  height: 340px;
+}
+
+/* Responsive sizing */
+@media (max-width: 768px) {
+  .glow-card {
+    width: 160px;
+    height: 220px;
+  }
+
+  .glow-card.person-card {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .glow-card {
+    width: 140px;
+    height: 200px;
+  }
+
+  .glow-card.person-card {
+    width: 170px;
+    height: 250px;
+  }
+}

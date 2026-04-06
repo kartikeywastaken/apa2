@@ -1,0 +1,16 @@
+Act like a Senior developer
+You need to make a fully responsive, minimilistic, modern and beautiful portfolio website for me and my friend . The site will act like our brand 
+The name of the site is Apatheia 
+You can use any framework you want but make sure it is production ready and can be deployed easily. 
+Goal is to make a 3D portfolio website with smooth animations and transitions. 
+It should use the following images in the folder 1.jpg, 2.jpg, 3.jpg. 
+The theme of the site should be related to the images mentioned above. 
+After hero section we need a About us section, and a section showing our projects and a contact section. 
+Site should be of a single page 
+In the about us section we need to show our skills and interests. And for that use Cards to show them. when we hover over them they should rotate in 3D space and show the content. 
+The names of the people are Kartikey and Ojas Their cards should also have options to show their other socials {leave the place they redirect to blank ill provide the actual links later}
+The our projects section should show our projects in a grid format. And when we hover over them they should rotate in 3D space and show the content. 
+Constraints:
+Do not use glassmorphism
+
+
