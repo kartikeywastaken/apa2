@@ -11,8 +11,8 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { label: 'INITIATORS', href: '#about' },
-    { label: 'WORKS', href: '#projects' },
+    { label: 'TEAMS', href: '#about' },
+    { label: 'PROJECTS', href: '#projects' },
     { label: 'CONTACT', href: '#contact' },
   ];
 

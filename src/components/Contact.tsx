@@ -1,13 +1,5 @@
-import { Mail, Github, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 export default function Contact() {
-  const socials = [
-    { icon: Mail, label: 'Email', href: 'mailto:void@apatheia.net' },
-    { icon: Github, label: 'GitHub', href: '#' },
-    { icon: Twitter, label: 'Twitter', href: '#' },
-    { icon: Instagram, label: 'Instagram', href: '#' },
-    { icon: Linkedin, label: 'LinkedIn', href: '#' },
-  ];
 
   return (
     <footer id="contact" style={{
@@ -31,31 +23,23 @@ export default function Contact() {
           }}>
             APATHEIA
           </h3>
-          <a href="mailto:void@apatheia.net" style={{
-            color: 'var(--accent-crimson)',
+          <a href="mailto:void@apatheia.net" aria-label="Email" style={{
+            fontFamily: 'var(--font-heading)',
+            fontSize: '0.7rem',
+            letterSpacing: '0.15em',
+            color: 'var(--text-secondary)',
             textDecoration: 'none',
-            fontFamily: 'var(--font-body)',
-            fontSize: '0.8rem',
-            letterSpacing: '0.05em'
-          }}>
-            void@apatheia.net
+            transition: 'color 0.3s',
+          }}
+            onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent-crimson)')}
+            onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
+          >
+            CONTACT US
           </a>
         </div>
 
-        <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
-          {socials.map(({ icon: Icon, label, href }) => (
-            <a
-              key={label}
-              href={href}
-              aria-label={label}
-              style={{ color: 'var(--text-secondary)', transition: 'color 0.3s' }}
-              onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent-crimson)')}
-              onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
-            >
-              <Icon size={18} />
-            </a>
-          ))}
-        </div>
+
+
 
         <p style={{
           color: 'var(--text-secondary)',

@@ -50,7 +50,7 @@ export default function Hero() {
             textTransform: 'uppercase',
             letterSpacing: '0.35em',
             color: 'var(--accent-gold)',
-            fontSize: 'clamp(0.65rem, 1.2vw, 0.9rem)',
+            fontSize: 'clamp(0.85rem, 1.5vw, 1.1rem)',
             fontWeight: 300
           }}
         >
@@ -58,29 +58,6 @@ export default function Hero() {
         </motion.p>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.4 }}
-        transition={{ delay: 2 }}
-        style={{
-          position: 'absolute',
-          bottom: '3rem',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: '0.5rem'
-        }}
-      >
-        <span style={{ fontSize: '0.6rem', letterSpacing: '0.2em', color: 'var(--text-secondary)', fontFamily: 'var(--font-heading)' }}>SCROLL</span>
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 1.5 }}
-          style={{ width: '1px', height: '30px', backgroundColor: 'var(--text-secondary)' }}
-        />
-      </motion.div>
     </section>
   );
 }

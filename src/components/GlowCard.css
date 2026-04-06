@@ -1,7 +1,7 @@
 .glow-card {
   width: 190px;
   height: 254px;
-  background: rgba(10, 10, 10, 0.8);
+  background: rgba(10, 10, 10, 0.45);
   position: relative;
   display: flex;
   place-content: center;
